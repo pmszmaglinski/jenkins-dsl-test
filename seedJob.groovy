@@ -52,7 +52,7 @@ job('Test-job01') {
 
   steps {
   
-    shell('echo $JOB_NAME')
+    shell('echo $JOB_NAME-$BUILD_NUMBER')
   }
 }
 
