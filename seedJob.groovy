@@ -30,6 +30,22 @@ listView("testView02") {
 	}
 }
 
+listView("testView04") {
+	jobs {
+		name("Test-job04")
+
+	}
+	columns {
+		status()
+		weather()
+		name()
+		lastSuccess()
+		lastFailure()
+		lastDuration()
+		buildButton()
+	}
+}
+
 
 job('Test-job01') {
 
@@ -49,6 +65,14 @@ job('Test-job02') {
 }
 
 job('Test-job03') {
+
+  steps {
+  
+    shell('echo echo $JOB_NAME')
+  }
+}
+
+job('Test-job04') {
 
   steps {
   
