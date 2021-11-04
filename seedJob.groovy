@@ -2,6 +2,7 @@ listView("testView01") {
 	jobs {
 		name("Test-job01")
 		name("Test-job03")
+		name("Test-job02")
 	}
 	columns {
 		status()
