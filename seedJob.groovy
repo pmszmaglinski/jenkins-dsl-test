@@ -1,3 +1,4 @@
+/*
 listView("testView01") {
 	jobs {
 		name("Test-job01")
@@ -46,7 +47,7 @@ listView("testView04") {
 		buildButton()
 	}
 }
-
+*/
 
 job('Test-job01') {
 
