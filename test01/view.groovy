@@ -52,4 +52,14 @@ listView("testView06") {
 		name("TestJob")
 		name("testJob-docker")
 	}
+
+	columns {
+		status()
+		weather()
+		name()
+		lastSuccess()
+		lastFailure()
+		lastDuration()
+		buildButton()
+	}
 }
