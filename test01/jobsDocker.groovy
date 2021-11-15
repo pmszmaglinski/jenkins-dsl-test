@@ -3,7 +3,6 @@ pipelineJob("TestJob") {
     keepDependencies(false)
     definition {
         cpsScm {
-            scm { none() }
             """podTemplate (containers: [containerTemplate(name: 'alpine', image: 'alpine:latest', command: 'sleep', args: '99d'),
                                          containerTemplate(name: 'centos', image: 'centos:7', command: 'sleep', args: '99d')
                                         ]
