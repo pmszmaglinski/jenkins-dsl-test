@@ -34,6 +34,9 @@ listView("testView02") {
 listView("testView04") {
 	jobs {
 		name("Test-job04")
+		name("TestJob10")
+		name("testJob11")
+		name("testJob12")
 
 	}
 	columns {
