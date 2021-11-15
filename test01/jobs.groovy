@@ -1,5 +1,5 @@
 job('Test-job01') {
-
+  label('master')
   steps {
   
     shell('echo $JOB_NAME-$BUILD_NUMBER')

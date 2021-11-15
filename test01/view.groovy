@@ -1,5 +1,3 @@
-println 'Testing'
-
 listView("testView01") {
 	jobs {
 		name("Test-job01")

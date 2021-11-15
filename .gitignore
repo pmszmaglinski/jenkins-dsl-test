@@ -1,2 +1,5 @@
 /.idea/
 /jenkins-dsl-test.iml
+/lib/
+/src/
+/test01/testing.groovy
