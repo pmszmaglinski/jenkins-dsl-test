@@ -3,7 +3,7 @@ pipelineJob("TestJob") {
     keepDependencies(false)
     definition {
         cpsScm {
-            """podTemplate (containers: [containerTemplate(name: 'alpine', image: 'alpine:latest', command: 'sleep', args: '99d'),
+"""podTemplate (containers: [containerTemplate(name: 'alpine', image: 'alpine:latest', command: 'sleep', args: '99d'),
                                          containerTemplate(name: 'centos', image: 'centos:7', command: 'sleep', args: '99d')
                                         ]
                             ) {
@@ -12,20 +12,20 @@ pipelineJob("TestJob") {
             
         stage('Jnlp') {
             println 'cycki'
-            sh 'echo \$JAVA_OPTS'
+            sh 'echo \\\$JAVA_OPTS'
         }
         
         stage('Alpine') {
             container('alpine') {
                 sh 'cat /etc/os-release'
-                sh 'echo \$JAVA_OPTS'
+                sh 'echo \\\$JAVA_OPTS'
             }
         }
         
         stage('Centos') {
             container('centos') {
                 sh 'cat /etc/os-release'
-                sh 'echo \$JAVA_OPTS'
+                sh 'echo \\\$JAVA_OPTS'
             }
         }
     }    
