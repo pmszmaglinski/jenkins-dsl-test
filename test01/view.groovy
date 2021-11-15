@@ -46,3 +46,10 @@ listView("testView04") {
 		buildButton()
 	}
 }
+
+listView("testView06") {
+	jobs {
+		name("TestJob")
+		name("testJob-docker")
+	}
+}
