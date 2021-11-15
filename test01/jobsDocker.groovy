@@ -3,7 +3,7 @@ pipelineJob("TestJob") {
     keepDependencies(false)
     definition {
         cps {
-            script(readFileFromWorkspace('Jenkinsfile'))
+            script(readFileFromWorkspace('test01/Jenkinsfile'))
 		}
     }
     disabled(false)
