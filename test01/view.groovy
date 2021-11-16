@@ -52,8 +52,7 @@ listView("testView04") {
 
 listView("testView06") {
 	jobs {
-		name("TestJob")
-		name("testJob-docker")
+		name('QualityAnalysis-Test')
 	}
 
 	columns {
