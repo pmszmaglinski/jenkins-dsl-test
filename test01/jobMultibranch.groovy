@@ -21,7 +21,7 @@ multibranchPipelineJob('QualityAnalysis-Test') {
             daysToKeep(5)
         }
     }
-    triggers {
-        periodic('5')
-    }
+    //triggers {
+    //    periodic(5)
+    //}
 }
