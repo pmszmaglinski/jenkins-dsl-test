@@ -1,8 +1,10 @@
-multibranchPipelineJob('QualityAnalysis-Test') {
-    displayName('QualityAnalysis-Test-DisplayName')
+String jobName='QualityAnalysis-Test'
+
+multibranchPipelineJob(jobName) {
+    displayName(jobName+'-DisplayName')
     branchSources {
         git {
-            id('QualityAnalysis-Test')
+            id(jobName)
             remote('https://dat.xxxxx.com/git/scm/da/xxx-repo.git')
             credentialsId('xxx_service')
             includes('(master|develop)')
