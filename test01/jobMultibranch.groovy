@@ -2,7 +2,7 @@ multibranchPipelineJob('QualityAnalysis-Test') {
     displayName('QualityAnalysis-Test-DisplayName')
     branchSources {
         git {
-            id('123456789')
+            id('QualityAnalysis-Test')
             remote('https://dat.xxxxx.com/git/scm/da/xxx-repo.git')
             credentialsId('xxx_service')
             includes('(master|develop)')
